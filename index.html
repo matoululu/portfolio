@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matthew Marineau | matou.io</title>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="index.svg" alt="matou.io logo">
+    <h1>Hi, i'm Matthew Marineau</h1>
+    <p>I'm a frontend developer, tinkerer, creator and father living in 🇨🇦.</p>
+    <a href="https://github.com/matoululu" class="button" target="_blank" rel="noreferrer">My GitHub</a>
+  </div>
+
+  <style>
+    :root {
+      --border-radius: 5px;
+      --color-background: #f4f6f8;
+      --color-font: #222;
+      --color-font-button: #fff;
+      --color-primary: #2797e8;
+      --color-primary-hover: #1f2741;
+      --font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+      --font-size: 18px;
+      --line-height: 1.5;
+    }
+
+    body {
+      align-items: center;
+      background-color: var(--color-background);
+      color: var(--color-font);
+      display: flex;
+      font-family: var(--font-family);
+      font-size: var(--font-size);
+      height: 100vh;
+      line-height: var(--line-height);
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .container {
+      width: calc(100% - 2rem);
+      padding: 0 2rem;
+    }
+
+    .logo {
+      height: 100px;
+    }
+
+    a.button,
+    a.button:visited {
+      background-color: var(--color-primary);
+      border: 2px solid var(--color-primary);
+      border-radius: var(--border-radius);
+      color: var(--color-font-button);
+      cursor: pointer;
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 700;
+      padding: .75rem 1.5rem;
+      margin: .5rem;
+      transition: background-color .15s ease-in-out,border-color .15s ease-in-out,color .15s ease-in-out;
+      text-decoration: none;
+    }
+
+    a.button:hover,
+    a.button:focus {
+      background-color: var(--color-primary-hover);
+      border-color: var(--color-primary-hover);
+      color: var(--color-font-button);
+      text-decoration: none;
+    }
+  </style>
+</body>
+</html>
