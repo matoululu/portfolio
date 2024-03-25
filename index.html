@@ -18,11 +18,11 @@
 <body>
 
   <div class="container">
-    <img class="logo" src="index.svg" alt="matou.io logo">
+    <a href="index.html"><img class="logo" src="index.svg" alt="matou.io logo"></a>
     <h1>Hi, I'm Matthew Marineau</h1>
     <p>I'm a frontend developer, tinkerer, creator and father living in 🇨🇦.</p>
     <a href="https://github.com/matoululu" class="button" target="_blank" rel="noreferrer">My GitHub ↗</a>
-    <a href="resume.pdf" class="button button--secondary" target="_blank" rel="noreferrer">Resume ↗</a>
+    <a href="resume.pdf" class="button button--secondary" rel="noreferrer">Resume (.PDF) ↗</a>
   </div>
 
   <div class="container container--announce">
@@ -82,9 +82,9 @@
       display: flex;
       font-family: var(--font-family);
       font-size: var(--font-size);
-      height: 100vh;
+      min-height: calc(100vh - 2rem);
       line-height: var(--line-height);
-      margin: 0 auto;
+      margin: 1rem auto;
       text-align: center;
       flex-direction: column;
 
