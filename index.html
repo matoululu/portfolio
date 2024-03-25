@@ -20,8 +20,41 @@
     <img class="logo" src="index.svg" alt="matou.io logo">
     <h1>Hi, I'm Matthew Marineau</h1>
     <p>I'm a frontend developer, tinkerer, creator and father living in 🇨🇦.</p>
-    <a href="https://github.com/matoululu" class="button" target="_blank" rel="noreferrer">My GitHub</a>
-    <a href="resume.pdf" class="button button--secondary" target="_blank" rel="noreferrer">Resume</a>
+    <a href="https://github.com/matoululu" class="button" target="_blank" rel="noreferrer">My GitHub ↗</a>
+    <a href="resume.pdf" class="button button--secondary" target="_blank" rel="noreferrer">Resume ↗</a>
+  </div>
+
+  <div class="container">
+    <h2>Featured projects</h2>
+    <div class="projects">
+      <div class="project">
+        <a href="https://github.com/matoululu/animape" target="_blank" rel="noreferrer">
+          <h3>🦧 Animape</h3>
+          <p>A simple way to animate elements on scroll, just add data-animape.</p>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="https://colorcodes.xyz/" target="_blank" rel="noreferrer">
+          <h3>🎨 Colorcodes</h3>
+          <p>A daily puzzle game. Can you crack the colorcode?</p>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="https://github.com/matoululu/swift-slider" target="_blank" rel="noreferrer">
+          <h3>⭐️ Swift slider</h3>
+          <p>A simple and intuitive way to make modern slideshows.</p>
+        </a>
+      </div>
+
+      <div class="project">
+        <a href="https://github.com/matoululu/blast-off" target="_blank" rel="noreferrer">
+          <h3>🚀 Blast off</h3>
+          <p>A simple, lightweight, and framework to help you get started with your next project.</p>
+        </a>
+      </div>
+    </div>
   </div>
 
   <style>
@@ -38,7 +71,7 @@
     }
 
     body {
-      align-items: center;
+      justify-content: center;
       background-color: var(--color-background);
       color: var(--color-font);
       display: flex;
@@ -48,12 +81,17 @@
       line-height: var(--line-height);
       margin: 0 auto;
       text-align: center;
+      flex-direction: column;
+    }
+
+    h2 {
+      margin-top: 0;
     }
 
     .container {
-      width: calc(100% - 2rem);
+      width: calc(100% - 4rem);
       max-width: 800px;
-      margin: 0 auto;
+      margin: 0 auto 1rem;
       padding: 2rem;
       border-radius: 0.5rem;
       background-color: white;
@@ -75,7 +113,7 @@
       font-weight: 700;
       padding: .75rem 1.5rem;
       margin: .5rem;
-      transition: background-color .15s ease-in-out,border-color .15s ease-in-out,color .15s ease-in-out;
+      transition: background-color .3s ease-in-out,border-color .3s ease-in-out,color .3s ease-in-out;
       text-decoration: none;
     }
 
@@ -90,6 +128,43 @@
     a.button--secondary {
       background-color: transparent;
       color: var(--color-primary);
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      gap: 2rem;
+    }
+
+    .project {
+      background-color: rgba(0,0,0,0.04);
+      text-align: left;
+      flex: 1 0 calc(50% - 2rem);
+      padding: 0.5rem;
+      border-radius: var(--border-radius);
+      transition: background-color .3s ease-in-out;
+
+      &:hover {
+        background-color: rgba(0,0,0,0.08);
+      }
+
+      @media (max-width: 768px) {
+        flex: 1 0 calc(100% - 2rem);
+      }
+
+      h3 {
+        margin: 0.5rem 0 0;
+      }
+
+      a,
+      a:visited,
+      a:hover {
+        display: block;
+        text-decoration: none;
+        color: var(--color-font);
+        padding: 0 0.5rem;
+      }
     }
   </style>
 </body>
